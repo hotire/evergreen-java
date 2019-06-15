@@ -52,3 +52,50 @@ study
 
 : 그냥 WebClient 쓰자.
 
+
+
+## Compact String 
+
+- vm option (default)
+```
+-XX:+UseCompressedStrings
+```
+
+- char[] 가 아닌 byte[]
+
+```
+public final class String
+    implements java.io.Serializable, Comparable<String>, CharSequence {
+
+    @Stable
+    private final byte[] value;
+}
+```
+
+- How It Works
+
+```
+ private final byte coder;
+```
+: LATIN1 / UTF16을 구별하는 필드
+
+```
+public int indexOf(String str) {
+        if (coder() == str.coder()) {
+            return isLatin1() ? StringLatin1.indexOf(value, str.value)
+                              : StringUTF16.indexOf(value, str.value);
+        }
+        if (coder() == LATIN1) {  // str.coder == UTF16
+            return -1;
+        }
+        return StringUTF16.indexOfLatin1(value, str.value);
+    }
+
+```
+: isLatin1() 체크를 통해 StringLantin1 / StringUTF16 으로 나누어 처리한다. 
+
+
+- Performance Test 
+
+: CompactPerformanceTest.class
+
