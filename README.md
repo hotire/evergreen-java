@@ -1,6 +1,21 @@
 # java11
 study
 
+## Time
+
+### ZoneDateTime
+
+LocalDateTime + Time-Zone 
+
+### Instant
+
+에포크 타임(EPOCH TIME, 1970-01-01 00:00:00 UTC)부터 경과된 시간을 나노초 단위로 표현한다
+
+### OffSet
+
+UTC로 부터 얼마만큼 떨어져 있는지 
+
+
 ## String
 
 ### strip
@@ -98,4 +113,7 @@ public int indexOf(String str) {
 - Performance Test 
 
 : CompactPerformanceTest.class
+
+
+
 
