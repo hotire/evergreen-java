@@ -3,6 +3,7 @@ package com.kakao.hotire.time;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.time.Instant;
+import java.time.OffsetDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import org.junit.Test;
@@ -26,8 +27,14 @@ public class InstantTest {
     // Given
     final Instant now = Instant.now();
 
+    System.out.println(now);
+
     // When
     ZonedDateTime zonedDateTime = now.atZone(ZoneId.of("Asia/Seoul"));
+
+    System.out.println(now.atZone(ZoneId.of("UTC")));
+    System.out.println(zonedDateTime);
+    System.out.println(OffsetDateTime.now());
 
     // Then
     assertThat(zonedDateTime.toInstant()).isEqualTo(now);
