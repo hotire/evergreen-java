@@ -4,7 +4,11 @@ import java.util.Set;
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.RoundEnvironment;
 import javax.lang.model.SourceVersion;
+import javax.lang.model.element.Element;
+import javax.lang.model.element.ElementKind;
+import javax.lang.model.element.Name;
 import javax.lang.model.element.TypeElement;
+import javax.tools.Diagnostic.Kind;
 
 public class HelloProcessor extends AbstractProcessor {
 
@@ -20,6 +24,24 @@ public class HelloProcessor extends AbstractProcessor {
 
   @Override
   public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
+    roundEnv.getElementsAnnotatedWith(Hello.class)
+      .stream()
+      .filter(this::checkElementType)
+      .forEach(element -> {
+        // process
+      });
+
     return false;
+  }
+
+  protected boolean checkElementType(Element element) {
+    Name elementName = element.getSimpleName();
+    if (element.getKind() != ElementKind.INTERFACE) {
+      processingEnv.getMessager().printMessage(Kind.ERROR, "Hello annotation can not be used on " + elementName);
+      return false;
+    }
+
+    processingEnv.getMessager().printMessage(Kind.NOTE, "Processing " + elementName);
+    return true;
   }
 }
