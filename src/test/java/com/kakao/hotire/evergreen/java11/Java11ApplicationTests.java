@@ -1,4 +1,4 @@
-package com.kakao.hotire.java11;
+package com.kakao.hotire.evergreen.java11;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

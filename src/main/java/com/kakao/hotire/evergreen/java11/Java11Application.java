@@ -1,4 +1,4 @@
-package com.kakao.hotire.java11;
+package com.kakao.hotire.evergreen.java11;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

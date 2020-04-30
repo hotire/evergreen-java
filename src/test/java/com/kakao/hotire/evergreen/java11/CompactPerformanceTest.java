@@ -1,10 +1,11 @@
-package com.kakao.hotire.java11;
+package com.kakao.hotire.evergreen.java11;
 
-import static java.util.stream.Collectors.toList;
+import org.junit.Test;
 
 import java.util.List;
 import java.util.stream.IntStream;
-import org.junit.Test;
+
+import static java.util.stream.Collectors.toList;
 
 public class CompactPerformanceTest {
 

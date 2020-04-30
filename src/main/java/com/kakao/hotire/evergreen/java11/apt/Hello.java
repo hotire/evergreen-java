@@ -1,4 +1,4 @@
-package com.kakao.hotire.java11.apt;
+package com.kakao.hotire.evergreen.java11.apt;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

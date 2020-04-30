@@ -1,4 +1,4 @@
-package com.kakao.hotire.java11.bci;
+package com.kakao.hotire.evergreen.java11.bci;
 
 
 import static org.assertj.core.api.Assertions.assertThat;

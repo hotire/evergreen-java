@@ -1,11 +1,6 @@
-package com.kakao.hotire.java11.bci;
+package com.kakao.hotire.evergreen.java11.bci;
 
-import static net.bytebuddy.matcher.ElementMatchers.named;
-
-import java.io.File;
 import java.io.IOException;
-import net.bytebuddy.ByteBuddy;
-import net.bytebuddy.implementation.FixedValue;
 
 public class BCI {
 
