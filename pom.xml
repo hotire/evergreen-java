@@ -12,7 +12,7 @@
   <groupId>com.kakao.hotire</groupId>
   <artifactId>java11</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>java11</name>
+  <name>evergreen-java</name>
   <description>Demo project for Spring Boot</description>
 
   <properties>
