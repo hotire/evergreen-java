@@ -1,6 +1,11 @@
 # Evergreen Java
 
 ### How To Install 
+
+```shell script
+brew tap AdoptOpenJDK/openjdk
+brew cask install <version>
+```
 - https://github.com/AdoptOpenJDK/homebrew-openjdk
 ## java13 
 
