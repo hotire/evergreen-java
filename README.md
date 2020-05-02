@@ -1,5 +1,9 @@
 # Evergreen Java
 
+### How To Install 
+- https://github.com/AdoptOpenJDK/homebrew-openjdk
+## java13 
+
 ## java11
 study
 
