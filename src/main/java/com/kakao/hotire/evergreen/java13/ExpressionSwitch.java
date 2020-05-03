@@ -12,7 +12,7 @@ public class ExpressionSwitch {
                 break;
             default:
                 result = 3;
-                break;;
+                break;
         }
         return result;
     }
