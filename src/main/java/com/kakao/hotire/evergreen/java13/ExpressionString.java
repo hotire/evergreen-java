@@ -5,7 +5,12 @@ import lombok.Getter;
 
 @Getter
 public class ExpressionString {
-    private final String jdk8 = "{\"id\":1,\"name\":\"hotire\",\"age\":30}";
+    private final String jdk8 = ""
+            + "{\n "
+            + "     \"id\":1,\n"
+            + "     \"name\":\"hotire\",\n"
+            + "     \"age\":30\n"
+            + "}\n";
     private final String jdk13 = """
     {
         "id":1,
