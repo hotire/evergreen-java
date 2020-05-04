@@ -5,9 +5,11 @@ public class ExpressionSwitch {
         int result = 0;
         switch(input){
             case 1:
+            case 2:
                 result = 1;
                 break;
-            case 2:
+            case 3:
+            case 4:
                 result = 2;
                 break;
             default:
