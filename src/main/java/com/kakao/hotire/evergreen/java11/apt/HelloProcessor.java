@@ -12,7 +12,7 @@ import javax.lang.model.element.Name;
 import javax.lang.model.element.TypeElement;
 import javax.tools.Diagnostic.Kind;
 
-@AutoService(Processor.class)
+//@AutoService(Processor.class)
 public class HelloProcessor extends AbstractProcessor {
 
   @Override
