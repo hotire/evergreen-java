@@ -4,6 +4,10 @@
 
 https://www.baeldung.com/java-memory-layout
 
+### Compressed OOPs in the JVM
+
+https://www.baeldung.com/jvm-compressed-oops
+
 ### How To Install 
 
 ```shell script
