@@ -1,4 +1,4 @@
-package com.kakao.hotire.jvm;
+package com.kakao.hotire.evergreen.jvm.jol;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
