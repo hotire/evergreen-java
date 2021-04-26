@@ -1,8 +1,8 @@
 # Evergreen Java
 
 ### Memory Layout of Objects in Java
-
-https://www.baeldung.com/java-memory-layout
+- https://blog.naver.com/gngh0101/222322390483
+- https://www.baeldung.com/java-memory-layout
 
 ### Compressed OOPs in the JVM
 
