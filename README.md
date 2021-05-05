@@ -18,6 +18,10 @@ brew cask install <version>
 
 ## java15
 
+
+### ZGC
+https://www.baeldung.com/jvm-zgc-garbage-collector
+
 - https://openjdk.java.net/projects/jdk/15/
 - https://www.baeldung.com/java-15-new
 
