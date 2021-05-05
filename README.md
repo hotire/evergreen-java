@@ -15,6 +15,13 @@ brew tap AdoptOpenJDK/openjdk
 brew cask install <version>
 ```
 - https://github.com/AdoptOpenJDK/homebrew-openjdk
+
+## java15
+
+- https://openjdk.java.net/projects/jdk/15/
+- https://www.baeldung.com/java-15-new
+
+
 ## java13 
 study 
 
@@ -148,5 +155,8 @@ public int indexOf(String str) {
 ## baeldung-java-tutorial
 
 https://www.baeldung.com/java-tutorial
+
+### Native
+https://www.baeldung.com/java-native
 
 
