@@ -18,10 +18,10 @@ public class ExpressionString {
         "age":30
     }
     """;
-    @Data
-    public static class User {
-        private Long id;
-        private String name;
-        private Integer age;
-    }
+@Data
+public static class User {
+    private Long id;
+    private String name;
+    private Integer age;
+}
 }
