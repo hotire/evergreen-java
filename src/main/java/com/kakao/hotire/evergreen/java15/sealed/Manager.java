@@ -4,5 +4,6 @@ import lombok.Getter;
 
 @Getter
 public non-sealed class Manager extends Account {
-    private String manager;
+    private String name;
+    private final Manager manager = new Manager() {};
 }
