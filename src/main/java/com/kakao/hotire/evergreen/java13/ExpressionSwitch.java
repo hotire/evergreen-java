@@ -28,7 +28,7 @@ public class ExpressionSwitch {
     }
 
     int jdk13(int input) {
-        return switch (input) {
+        int result = switch (input) {
             case 1, 2:
                 yield 1;
             case 3, 4:
@@ -36,5 +36,6 @@ public class ExpressionSwitch {
             default:
                 yield 3;
         };
+        return result;
     }
 }
