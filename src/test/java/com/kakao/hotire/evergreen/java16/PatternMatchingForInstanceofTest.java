@@ -10,6 +10,6 @@ class PatternMatchingForInstanceofTest {
         final PatternMatchingForInstanceof matching = new PatternMatchingForInstanceof();
 
         // when
-        matching.jdk16("HELLO");
+        matching.patternMatching("HELLO");
     }
 }
