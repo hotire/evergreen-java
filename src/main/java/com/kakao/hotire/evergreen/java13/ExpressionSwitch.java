@@ -1,9 +1,9 @@
 package com.kakao.hotire.evergreen.java13;
 
 public class ExpressionSwitch {
-    int jdkClassic(int input) {
+    int classic(int input) {
         int result = 0;
-        switch(input){
+        switch (input) {
             case 1:
             case 2:
                 result = 1;
@@ -19,7 +19,7 @@ public class ExpressionSwitch {
         return result;
     }
 
-    int jdk12(int input) {
+    int getValueByClassic(int input) {
         return switch (input) {
             case 1, 2 -> 1;
             case 3, 4 -> 2;
@@ -27,8 +27,8 @@ public class ExpressionSwitch {
         };
     }
 
-    int jdk13(int input) {
-        int result = switch (input) {
+    int getValue(int input) {
+        final int result = switch (input) {
             case 1, 2:
                 yield 1;
             case 3, 4:

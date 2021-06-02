@@ -13,11 +13,11 @@ class ExpressionStringTest {
     void json() throws JsonProcessingException {
         // given
         final ObjectMapper objectMapper = new ObjectMapper();
-        final ExpressionString expressionString = new ExpressionString();
+        final TextBlocks textBlocks = new TextBlocks();
 
         // when
-        final ExpressionString.User jdk8 = objectMapper.readValue(expressionString.getJdk8(), ExpressionString.User.class);
-        final ExpressionString.User jdk13 = objectMapper.readValue(expressionString.getJdk13(), ExpressionString.User.class);
+        final TextBlocks.User jdk8 = objectMapper.readValue(textBlocks.getClassic(), TextBlocks.User.class);
+        final TextBlocks.User jdk13 = objectMapper.readValue(textBlocks.getTextBlocks(), TextBlocks.User.class);
 
         // then
         assertThat(jdk8).isEqualTo(jdk13);

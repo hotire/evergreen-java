@@ -6,8 +6,39 @@ package com.kakao.hotire.evergreen.java14;
  */
 public class ExpressionSwitch {
 
+    /**
+     * statement vs expression
+     *
+     * https://shoark7.github.io/programming/knowledge/expression-vs-statement
+     * https://gusdnd852.tistory.com/68
+     */
+//    public static void main(String... args) {
+//        int a = 3; // statement
+//        System.out.println(int b = 10); // error
+//
+//        a++; // statement && expression
+//
+//        a;    // expression
+//        a +2; // expression
+//    }
+
     enum Day {
         MONDAY, FRIDAY, SUNDAY, TUESDAY, THURSDAY, SATURDAY, WEDNESDAY
+    }
+
+    int getValue(final Day day) {
+        switch (day) {
+            case MONDAY:
+                return 1;
+            case FRIDAY:
+                return 2;
+            case WEDNESDAY:
+                return 3;
+            case THURSDAY:
+                return 4;
+            default:
+                return -1;
+        }
     }
 
     void legacy(final Day day) {

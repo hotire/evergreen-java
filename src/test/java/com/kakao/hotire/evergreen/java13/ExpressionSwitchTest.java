@@ -19,7 +19,7 @@ class ExpressionSwitchTest {
         final ExpressionSwitch expressionSwitch = new ExpressionSwitch();
 
         // when
-        final int result = expressionSwitch.jdkClassic(input);
+        final int result = expressionSwitch.getValue(input);
 
         // then
         assertThat(result).isEqualTo(expected);
@@ -32,7 +32,7 @@ class ExpressionSwitchTest {
         final ExpressionSwitch expressionSwitch = new ExpressionSwitch();
 
         // when
-        final int result = expressionSwitch.jdk12(input);
+        final int result = expressionSwitch.getValueByClassic(input);
 
         // then
         assertThat(result).isEqualTo(expected);
@@ -45,7 +45,7 @@ class ExpressionSwitchTest {
         final ExpressionSwitch expressionSwitch = new ExpressionSwitch();
 
         // when
-        final int result = expressionSwitch.jdk13(input);
+        final int result = expressionSwitch.getValue(input);
 
         // then
         assertThat(result).isEqualTo(expected);

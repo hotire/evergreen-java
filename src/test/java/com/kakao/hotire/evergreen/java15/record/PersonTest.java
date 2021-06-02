@@ -8,14 +8,8 @@ class PersonTest {
 
     @Test
     void hashcode() {
-        // given
-        var person = new Person("hotire", 30);
-
-        // when
-        var result = person.hashCode();
-
-        // then
-        assertThat(result).isEqualTo(new Person("hotire", 30).hashCode());
+        // expected
+        assertThat(new Person("hotire", 30)).hasSameHashCodeAs(new Person("hotire", 30));
     }
 
     @Test
@@ -24,5 +18,24 @@ class PersonTest {
         assertThat(new Person("hotire", 30)).isEqualTo(new Person("hotire", 30));
     }
 
+    @Test
+    void testToString() {
+        // no assert
+        System.out.println(new Person("hotire", 30));
+    }
 
+    @Test
+    void getter() {
+        final Person person = new Person("hotire", 30);
+        person.age();
+        person.name();
+        System.out.println(person.toString()); // Person[name=hotire, age=30]
+        System.out.println(person.hashCode()); // 1099307279
+    }
+
+    @Test
+    void field() {
+        final Person person = new Person("hotire", 30);
+        System.out.println(person);
+    }
 }

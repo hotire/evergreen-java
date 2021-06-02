@@ -11,7 +11,7 @@ public class PatternMatchingForInstanceof {
         }
     }
 
-    void jdk16(final Object obj) {
+    void patternMatching(final Object obj) {
         if (obj instanceof String s) {
             log.info(s.toUpperCase());
         }
