@@ -24,6 +24,7 @@ https://www.baeldung.com/jvm-zgc-garbage-collector
 
 - https://openjdk.java.net/projects/jdk/15/
 - https://www.baeldung.com/java-15-new
+- http://cr.openjdk.java.net/~pliden/slides/ZGC-FOSDEM-2018.pdf
 
 
 ## java13 
