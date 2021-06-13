@@ -156,12 +156,14 @@ public int indexOf(String str) {
 
 : CompactPerformanceTest.class
 
-
 ## baeldung-java-tutorial
 
 https://www.baeldung.com/java-tutorial
 
 ### Native
+
 https://www.baeldung.com/java-native
 
+### Beyond Java
 
+https://blog.naver.com/gngh0101/222396980468
