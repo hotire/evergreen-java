@@ -51,7 +51,6 @@ class ExpressionSwitchTest {
         assertThat(result).isEqualTo(expected);
     }
 
-
     private static Stream<Arguments> provideArguments() {
         return Stream.of(
                 Arguments.of(1, 1),

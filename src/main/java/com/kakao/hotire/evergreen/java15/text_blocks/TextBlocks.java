@@ -6,10 +6,10 @@ package com.kakao.hotire.evergreen.java15.text_blocks;
  */
 public class TextBlocks {
     final String html = """
-              <html>
-                  <body>
-                      <p>Hello, world</p>
-                  </body>
-              </html>
-              """;
+            <html>
+                <body>
+                    <p>Hello, world</p>
+                </body>
+            </html>
+            """;
 }

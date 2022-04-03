@@ -6,7 +6,7 @@ package com.kakao.hotire.evergreen.java14;
 
 public class NPEHelper {
 
-    public static void main(String ... args) {
+    public static void main(String... args) {
         new NPEHelper().npe();
     }
 
