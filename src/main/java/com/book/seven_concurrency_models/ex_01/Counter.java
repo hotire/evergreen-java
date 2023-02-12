@@ -3,8 +3,11 @@ package com.book.seven_concurrency_models.ex_01;
 import java.util.List;
 import java.util.stream.IntStream;
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
 
 /**
+ * 잘못된 코드로 인한 동시성 코드
+ *
  * 읽기-수정-쓰기 패턴
  *  ++count to bytecode
  *  getfield #2
@@ -13,13 +16,16 @@ import lombok.Getter;
  *  putfield #2
  *
  *  -> getfield count에 담김 값을 읽고 icost_1 거기에 1을 더하는 iadd putfield 결과를 다시 저장
+ *
  */
+@Slf4j
 @Getter
 public class Counter {
     private int count = 0;
     public void increment() {
         ++count;
     }
+
     public static void main(String ... args) throws InterruptedException {
         final Counter counter = new Counter();
         class CountingThead extends Thread {
@@ -35,6 +41,6 @@ public class Counter {
         for (CountingThead countingThead : countingTheadList) {
             countingThead.join();
         }
-        System.out.println(counter.getCount());
+        log.info("count : {}", counter.getCount());
     }
 }
