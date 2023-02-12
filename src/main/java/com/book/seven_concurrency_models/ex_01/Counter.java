@@ -4,6 +4,16 @@ import java.util.List;
 import java.util.stream.IntStream;
 import lombok.Getter;
 
+/**
+ * 읽기-수정-쓰기 패턴
+ *  ++count to bytecode
+ *  getfield #2
+ *  icost_1
+ *  iadd
+ *  putfield #2
+ *
+ *  -> getfield count에 담김 값을 읽고 icost_1 거기에 1을 더하는 iadd putfield 결과를 다시 저장
+ */
 @Getter
 public class Counter {
     private int count = 0;
