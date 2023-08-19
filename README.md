@@ -167,3 +167,8 @@ https://www.baeldung.com/java-native
 ### Beyond Java
 
 https://blog.naver.com/gngh0101/222396980468
+
+
+## ZGC
+
+- https://d2.naver.com/helloworld/0128759
