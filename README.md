@@ -175,3 +175,9 @@ https://blog.naver.com/gngh0101/222396980468
 
 ZGC(Z Garbage Collector)는 Serial GC와 Parallel Old GC, Parallel GC, CMS GC, G1 GC를 지나 새로운 세대로 등장한 Java의 garbage collector이다. 
 ZGC는 JDK 11에 실험적 기능으로 추가되었고, JDK 15에서 정식으로 garbage collector로 인정된 다음 LTS(long term support) 버전인 JDK 17에도 반영되었다.
+
+
+### ZPage
+
+이전 세대의 garbage collector인 G1 GC에서는 메모리를 region이라는 논리적인 단위로 구분한다. 
+새로운 세대의 garbage collector인 ZGC에서는 메모리를 ZPage라는 논리적인 단위로 구분한다.
