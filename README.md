@@ -181,3 +181,9 @@ ZGC는 JDK 11에 실험적 기능으로 추가되었고, JDK 15에서 정식으�
 
 이전 세대의 garbage collector인 G1 GC에서는 메모리를 region이라는 논리적인 단위로 구분한다. 
 새로운 세대의 garbage collector인 ZGC에서는 메모리를 ZPage라는 논리적인 단위로 구분한다.
+
+
+## switch - if-else jump table
+
+- https://www.geeksforgeeks.org/switch-vs-else/
+- https://www.baeldung.com/cs/if-else-switch
